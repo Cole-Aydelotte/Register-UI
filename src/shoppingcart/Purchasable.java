@@ -1,3 +1,4 @@
+package shoppingcart;
 public class Purchasable
 {
     private int stock;

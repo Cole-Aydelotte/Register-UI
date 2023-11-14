@@ -1,3 +1,4 @@
+package shoppingcart;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -6,7 +7,10 @@ public class PurchasableItems
     private ArrayList<Purchasable> Items;
 
 
-    public PurchasableItems(){}
+    public PurchasableItems()
+    {
+        Items = new ArrayList<>();
+    }
 
     public PurchasableItems(ArrayList<Purchasable> list)
     {
@@ -33,5 +37,23 @@ public class PurchasableItems
         Random rand = new Random();
         int randNum = rand.nextInt(1000, 9999);
         return randNum;
+    }
+
+    @Override
+    public String toString()
+    {
+        String to = "";
+        for (int x = 0; x < Items.size(); x++)
+        {
+            if(x == 0)
+            {
+                to += Items.get(x);
+            }
+            else
+            {
+                to += ", " + Items.get(x);
+            }
+        }
+        return to;
     }
 }

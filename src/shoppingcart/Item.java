@@ -1,3 +1,5 @@
+package shoppingcart;
+
 public class Item 
 {
     private String name;
