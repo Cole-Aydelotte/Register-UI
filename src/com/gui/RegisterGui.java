@@ -1,3 +1,3 @@
-package gui;
+package com.gui;
 
 public class RegisterGui {}

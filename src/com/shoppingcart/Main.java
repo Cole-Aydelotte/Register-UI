@@ -1,4 +1,4 @@
-import shoppingcart.PurchasableItems;    
+package com.shoppingcart;
 
 public class Main
 {

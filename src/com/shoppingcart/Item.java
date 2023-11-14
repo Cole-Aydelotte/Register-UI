@@ -1,4 +1,4 @@
-package shoppingcart;
+package com.shoppingcart;
 
 public class Item 
 {
