@@ -1,7 +1,13 @@
 package com.shoppingcart;
+
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * The PurchasableItems class has two constructors that instantiate
+ * a private variable named Items this list can them be mutated by
+ * the createItem list.
+ */
 public class PurchasableItems
 {
     private ArrayList<Purchasable> Items;
@@ -15,8 +21,6 @@ public class PurchasableItems
         Items = new ArrayList<>();
     }
 
-    
-    
     /**
      * Constructor that takes a ArrayList containing Purchasables
      * as a parameter and sets the private variable Items equal to
@@ -66,18 +70,18 @@ public class PurchasableItems
     @Override
     public String toString()
     {
-        String to = "";
+        String str = "";
         for (int x = 0; x < Items.size(); x++)
         {
             if(x == 0)
             {
-                to += Items.get(x);
+                str += "Stock: " + Items.get(x).getStock() + " Barcode: " + Items.get(x).getBarcode() + " Price: "  + Items.get(x).getPrice() + " Name: " + Items.get(x).getName() + ' ';
             }
             else
             {
-                to += ", " + Items.get(x);
+                str += ", Stock: " + Items.get(x).getStock() + " Barcode: " + Items.get(x).getBarcode() + " Price: "  + Items.get(x).getPrice() + " Name: " + Items.get(x).getName() + ' ';
             }
         }
-        return to;
+        return str;
     }
 }

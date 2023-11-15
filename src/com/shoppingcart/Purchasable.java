@@ -1,4 +1,5 @@
 package com.shoppingcart;
+
 public class Purchasable
 {
     private int stock;
@@ -6,6 +7,10 @@ public class Purchasable
     private double price;
     private String name;
 
+    /**
+     * A constructor that takes four parameters and intatiates the private
+     * variables with those values.
+     */
     public Purchasable(int stock, int barcode, double price, String name)
     {
         this.name = name;
@@ -32,5 +37,10 @@ public class Purchasable
     public int getStock()
     {
         return stock;
+    }
+
+    public void setStock(int num)
+    {
+        this.stock = num;
     }
 }

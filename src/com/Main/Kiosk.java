@@ -1,6 +1,8 @@
-package com.shoppingcart;
+package com.Main;
 
-public class Main
+import com.shoppingcart.PurchasableItems;
+
+public class Kiosk
 {
      public static void main(String[] args)
     {
