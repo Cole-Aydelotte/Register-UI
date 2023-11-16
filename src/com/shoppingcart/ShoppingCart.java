@@ -13,8 +13,16 @@ public class ShoppingCart
 {
     private ArrayList<Item> items;
     
+    /**
+     * empty constructor
+     */
     public ShoppingCart(){}
     
+    /**
+     * constructor that takes a ArrayList as a parameter and 
+     * sets the private variable equal to the parameter.
+     * @param theList
+     */
     public ShoppingCart(ArrayList<Item> theList)
     {
         items = theList;

@@ -36,7 +36,5 @@ public class RegisterGui extends JFrame
                 reg.searchPurchasable(searchField.getText());
             }
         });
-
-        
     }
 }
