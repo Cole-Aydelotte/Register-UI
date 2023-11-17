@@ -40,4 +40,9 @@ public class RegisterGuiFunctionality
         }
         // update the Product list model
     }
+
+    public void recievePhoneNumber()
+    {
+        
+    }
 }
