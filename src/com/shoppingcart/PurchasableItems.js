@@ -1,24 +1,19 @@
-package com.shoppingcart;
-
-import java.util.ArrayList;
-import java.util.Random;
-
 /**
  * The PurchasableItems class has two constructors that instantiate
  * a private variable named Items this list can them be mutated by
  * the createItem list.
  */
-public class PurchasableItems
+class PurchasableItems
 {
-    private ArrayList<Purchasable> Items;
+    Items;
 
     /**
      * Base case contructor; sets the private variable Items
      * equal to a new ArrayList containing Purchasables.
      */
-    public PurchasableItems()
+    PurchasableItems()
     {
-        Items = new ArrayList<>();
+        Items = new Array;
     }
 
     /**
@@ -26,7 +21,7 @@ public class PurchasableItems
      * as a parameter and sets the private variable Items equal to
      * the parameter list.
      */
-    public PurchasableItems(ArrayList<Purchasable> list)
+    PurchasableItems(list)
     {
         Items = list;
     }
@@ -36,10 +31,10 @@ public class PurchasableItems
      * parameters and a four digit number recieved from 
      * getBarcode().
      */
-    public void createItem(int stock, double price, String name)
+    createItem(stock, price, name)
     {
-        int barcode = getBarcode();
-        for (int x = 0; x < Items.size(); x++)
+        barcode = getBarcode();
+        for (x = 0; x < Items.size(); x++)
         {         
             do
             {
@@ -47,7 +42,7 @@ public class PurchasableItems
             }
             while(barcode == Items.get(x).getBarcode());
         }
-        Purchasable item = new Purchasable(stock, barcode, price, name);
+        item = new Purchasable(stock, barcode, price, name);
         Items.add(item);
     }
 
@@ -55,23 +50,21 @@ public class PurchasableItems
      * Generates a unique four digit number and returns
      * the Result.
      */
-        public int getBarcode()
+    getBarcode()
     {
-        Random rand = new Random();
-        int randNum = rand.nextInt(1000, 9999);
+        randNum = rand.nextInt(1000, 9999);
         return randNum;
     }
 
-    public ArrayList<Purchasable> getItems()
+    getItems()
     {
         return Items;
     }
 
-    @Override
-    public String toString()
+    toString()
     {
-        String str = "";
-        for (int x = 0; x < Items.size(); x++)
+        str = "";
+        for (x = 0; x < Items.size(); x++)
         {
             if(x == 0)
             {
