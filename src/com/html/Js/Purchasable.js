@@ -1,17 +1,15 @@
-package com.shoppingcart;
-
-public class Purchasable
+class Purchasable
 {
-    private int stock;
-    private int barcode;
-    private double price;
-    private String name;
+    stock;
+    barcode;
+    price;
+    name;
 
     /**
      * A constructor that takes four parameters and intatiates the private
      * variables with those values.
      */
-    public Purchasable(int stock, int barcode, double price, String name)
+    Purchasable(stock, barcode, price, name)
     {
         this.name = name;
         this.barcode = barcode;
@@ -19,27 +17,27 @@ public class Purchasable
         this.stock = stock;
     }
 
-    public double getPrice()
+    getPrice()
     {
         return price;
     }
 
-    public int getBarcode()
+    getBarcode()
     {
         return  barcode;
     }
 
-    public String getName()
+    getName()
     {
         return name;
     }
 
-    public int getStock()
+    getStock()
     {
         return stock;
     }
 
-    public void setStock(int num)
+    setStock(num)
     {
         this.stock = num;
     }

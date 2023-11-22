@@ -1,14 +1,8 @@
-package com.shoppingcart;
-
-import java.util.ArrayList;
-
-import com.sms.Receipt;
-
-public class Purchase 
+class Purchase 
 {
-    private ArrayList<Item> cart;
-    private ArrayList<Purchasable> purrList;
-    private Receipt receipt;
+    cart;
+    purrList;
+    receipt;
 
     /**
      * actual transaction occuring takes a ShoppingCart, PurchasableItems, and Phone number
@@ -20,15 +14,15 @@ public class Purchase
      * 
      * TODO: Make it so you can remove items from the purchasable list.
      */
-    public Purchase(ShoppingCart passCart, PurchasableItems purchasableItems, int pN)
+    Purchase(passCart, purchasableItems, pN)
     {
         cart = passCart.getItems();
         purrList = purchasableItems.getItems();
         receipt = new Receipt(pN);
 
-        for(int x = 0; x < cart.size(); x++)
+        for(x = 0; x < cart.size(); x++)
         {
-            for(int y = x + 1; y < purrList.size(); y++)
+            for(y = x + 1; y < purrList.size(); y++)
             {
                 if (cart.get(x).getName() == purrList.get(y).getName())
                 {
