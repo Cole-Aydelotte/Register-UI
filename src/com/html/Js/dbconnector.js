@@ -21,6 +21,8 @@ class dbconnector
           }
           console.log('Connected to database');
         });
+
+        connection.query("mysql -u " + user +  " -p " + password + " < dupfile.sql");
     }
 
     insertInto(name, stock, price)
